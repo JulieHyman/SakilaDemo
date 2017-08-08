@@ -1,0 +1,27 @@
+{
+  "id" : "address.idx_postal_code",
+  "name" : "idx_postal_code",
+  "method" : "BTREE",
+  "unique" : false,
+  "type" : {
+    "table" : {
+      "ref" : {
+        "id" : "address",
+        "tableName" : "address",
+        "containerName" : "sakila"
+      },
+      "columns" : [ {
+        "ref" : {
+          "container" : "sakila",
+          "tableName" : "address",
+          "columnName" : "postal_code"
+        },
+        "position" : 1
+      } ]
+    }
+  },
+  "properties" : {
+    "keyBlockSize" : 0,
+    "comment" : ""
+  }
+}

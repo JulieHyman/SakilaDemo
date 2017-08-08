@@ -1,0 +1,19 @@
+{
+  "id" : "customer_create_update",
+  "time" : "BEFORE",
+  "action" : "BEGIN\r\n   SET NEW.create_date = NOW();\r\n   SET NEW.full_name = Concat_ws(' ',first_name, last_name);\r\nEND",
+  "on" : {
+    "table" : {
+      "events" : [ "INSERT" ],
+      "tableRef" : {
+        "id" : "customer",
+        "tableName" : "customer",
+        "containerName" : "sakila"
+      }
+    }
+  },
+  "properties" : {
+    "definer" : "`root`@`%`"
+  },
+  "name" : "customer_create_update"
+}
