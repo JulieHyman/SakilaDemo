@@ -324,6 +324,28 @@
             "value" : "utf8"
           } ]
         }
+      }, {
+        "name" : "account_rep",
+        "properties" : {
+          "autoincrement" : false
+        },
+        "dataType" : {
+          "text" : "varchar(${0}) COLLATE ${1} CHARACTER SET ${2}",
+          "name" : "varchar",
+          "params" : [ {
+            "position" : 0,
+            "name" : "length",
+            "value" : "45"
+          }, {
+            "position" : 1,
+            "name" : "collation",
+            "value" : "utf8_general_ci"
+          }, {
+            "position" : 2,
+            "name" : "charset",
+            "value" : "utf8"
+          } ]
+        }
       } ]
     }
   },
