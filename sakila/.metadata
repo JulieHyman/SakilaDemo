@@ -1,0 +1,21 @@
+{
+  "metadata" : {
+    "container" : "sakila",
+    "origin" : "database",
+    "version" : 1.0,
+    "connectorUUID" : "2dca9e44-37c7-4ac3-b263-05cd48553da3",
+    "creationDate" : "2017-08-07T20:00:07-07",
+    "user" : "root"
+  },
+  "dbPlatform" : {
+    "name" : "MYSQL",
+    "version" : "5.6.0"
+  },
+  "tables" : [ ],
+  "indexes" : [ ],
+  "triggers" : [ ],
+  "functions" : [ ],
+  "procedures" : [ ],
+  "views" : [ ],
+  "events" : [ ]
+}
